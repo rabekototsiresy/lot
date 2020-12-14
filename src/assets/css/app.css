@@ -30,7 +30,6 @@ body{
 }
 
 .content-bottom-text{
-    border: 2px solid black;
     width: 250px;
     display: flex;
     align-items: center;
@@ -39,7 +38,7 @@ body{
 }
 
 .content-bottom-right{
-    border: 2px solid black;
+
     width: 150px;
     display: flex;
     align-items: center;
