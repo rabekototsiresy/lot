@@ -1,25 +1,21 @@
 
 import "./utils/i18n";
-import { useTranslation } from 'react-i18next';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import HomePage from "./pages/HomePage";
 
 const App = ()=> {
 
-  const { t,i18n } = useTranslation()
 
 
-  // change lang
-  const changeLang = (lang)=>{
-    i18n.changeLanguage(lang)
-
-}
   return (
-    <div>
-      <h1>{t('hello')}</h1>
-      <p>
-        <button onClick={()=>changeLang('en')}>en</button>
-        <button  onClick={()=>changeLang('fr')}>fr</button>
-      </p>
-    </div>
+   
+    <Router>
+
+      <Switch>
+        <Route path="/" exact component={ HomePage } />
+      </Switch>
+
+    </Router>
     
   );
 }
