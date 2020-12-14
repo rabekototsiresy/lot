@@ -1,14 +1,15 @@
 import React from 'react'
 import LinePurpleUi from '../ui/LinePurpleUi'
 import PopupBottomUi from '../ui/PopupBottomUi'
+import Grid from '@material-ui/core/Grid'
 
-const MessBottomComp = () => {
+const FooterComp = () => {
     return (
-        <div className="mess-bottom">
+        <Grid className="container-footer" sm={12}>
             <PopupBottomUi />
             <LinePurpleUi />
-        </div>
+        </Grid>
     )
 }
 
-export default MessBottomComp
+export default FooterComp

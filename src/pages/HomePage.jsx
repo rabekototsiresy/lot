@@ -1,10 +1,14 @@
 import React from 'react'
+import Grid from '@material-ui/core/Grid';
+import { NavigateBefore } from '@material-ui/icons';
+import NavigationContentComp from '../components/NavigationContentComp';
+
 
 const HomePage = () => {
     return (
-        <div>
-            home page
-        </div>
+        <Grid sm={12} className="content-home-page">
+            <NavigationContentComp />
+        </Grid>
     )
 }
 

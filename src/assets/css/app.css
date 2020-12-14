@@ -1,6 +1,46 @@
 body{
     margin: 0px;
+    box-sizing: border-box;
 }
+
+
+
+
+
+.container-page{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container-header{
+    flex-basis: 9%;
+}
+
+.container-content{
+    flex-basis: 80%;
+
+    
+}
+
+
+.container-footer{
+    
+    flex-basis: 8%;
+    
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    align-items: center;
+    background-color: #EDE7FE;
+    color : #333333;
+    
+}
+
+
+
 
 .line-purple{
     height: 22px;
@@ -8,14 +48,17 @@ body{
     background-color: #592766;
     color: wheat;
     display: flex;
+
    
 }
 
 .popup-bottom{
     display: flex;
     height: 40px;
-    background-color: gray;
+   
     justify-content: space-between;
+    border-top: 7px solid #DDD2F6;
+    width: 98%;
 
   
     
@@ -27,20 +70,61 @@ body{
     position: absolute;
     bottom: 0px;
     width: 100%;
-}
-
-.content-bottom-text{
-    width: 250px;
-    display: flex;
     align-items: center;
-    justify-content: space-around;
+    background-color: #EDE7FE;
+    color : #333333;
     
 }
 
-.content-bottom-right{
-
-    width: 150px;
+.content-bottom-left{
+  
     display: flex;
     align-items: center;
+
+  
+    
+}
+.content-bottom-left span{
+     padding: 0 5px;
+    
+}
+.content-bottom-right span{
+  
+    padding: 0 5px;
+}
+
+.content-bottom-right{
+  
+    display: flex;
+    align-items: center;
+   
+  
+}
+
+.navbar{
+    background-color: #5927C6;
+    font-size: 500px;
+}
+
+/* HOME PAGE */
+
+.content-home-page{
+    flex-grow: 1;
+    height: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container-icon{
+    width: 100%;
+    display: flex;
     justify-content: space-around;
+}
+
+.user-icon, .logo-lotness{
+    padding: 20px 20px;
+    background-color: rgba(0,0,0,26%);
+    border-radius: 100%;
 }
